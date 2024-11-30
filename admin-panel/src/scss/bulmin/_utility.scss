@@ -1,0 +1,24 @@
+.is-fit-image-rounded{
+    border-radius: 50%;
+    object-fit: cover;
+}
+.has-list-child{
+    &:hover a ~ ul, &.is-active a ~ ul{
+        display:block;
+    }
+    ul{
+        display: none;
+        border-left: 1px solid rgb(0, 174, 255) !important;
+        &:hover{
+            display: block;
+        }
+    }
+    &:hover a, &.is-active a{
+        & span:last-child {
+            transform: rotate(90deg);
+        }
+    }
+}
+.is-no-wrap{
+    white-space: nowrap;
+}
